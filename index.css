@@ -29,12 +29,12 @@ body {
 
 /* Imagen de fondo/banner (imagen de herramientas) */
 .banner {
-  width: calc(100% - 20px); /* Ancho responsive con márgenes de 10px a cada lado */
-  max-width: 350px; /* Ancho máximo del banner - ajustar aquí */
+  width: 100%; /* Ancho completo de la tarjeta */
+  max-width: none; /* Sin límite de ancho máximo */
   height: 180px; /* Alto del banner aumentado para mostrar toda la imagen - ajustar aquí */
   object-fit: cover; /* Hace que la imagen cubra el área sin distorsionarse */
   border-radius: 12px; /* Esquinas redondeadas del banner */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
+  margin: 0; /* Sin márgenes para ocupar todo el ancho */
   display: block; /* Para que el centrado funcione correctamente */
 }
 
@@ -166,7 +166,8 @@ p {
   }
 
   .banner {
-    max-width: 280px; /* Banner un poco más pequeño en móvil - ajustar aquí */
+    width: 100%; /* Banner ocupa todo el ancho en móvil */
+    max-width: none; /* Sin límite de ancho */
     height: 150px; /* Altura aumentada para móvil - ajustar aquí */
     /* Los márgenes y centrado se mantienen automáticamente */
   }
@@ -230,7 +231,8 @@ p {
   }
 
   .banner {
-    max-width: 250px; /* Banner más pequeño para pantallas tiny */
+    width: 100%; /* Banner ocupa todo el ancho para pantallas tiny */
+    max-width: none; /* Sin límite de ancho */
     height: 130px; /* Altura ajustada para pantallas pequeñas */
     /* Los márgenes y centrado se mantienen automáticamente */
   }
@@ -264,7 +266,8 @@ p {
   }
 
   .banner {
-    max-width: 400px; /* Banner más grande en tablets */
+    width: 100%; /* Banner ocupa todo el ancho en tablets */
+    max-width: none; /* Sin límite de ancho */
     height: 200px; /* Altura aumentada para tablets */
     /* Los márgenes y centrado se mantienen automáticamente */
   }
