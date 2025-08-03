@@ -55,8 +55,9 @@ body {
 /* Nombre principal */
 h1 {
   margin: 10px 0; /* Espacio arriba y abajo del nombre */
-  font-size: 24px; /* Tamaño del nombre - ajustar aquí */
+  font-size: 32px; /* Tamaño del nombre - ajustar aquí */
   color: white; /* Color del nombre/título - Cambiar a #000 para fondo blanco */
+  font-weight: bold; /* Texto en negrita para mayor impacto */
 }
 
 /* Párrafos generales */
@@ -177,7 +178,7 @@ p {
   }
 
   h1 {
-    font-size: 20px; /* Título más pequeño en móvil */
+    font-size: 28px; /* Título más grande en móvil para mejor visibilidad */
     margin: 8px 0; /* Menos margen */
   }
 
@@ -190,9 +191,9 @@ p {
   }
 
   .button {
-    font-size: 11px; /* Texto de botones más pequeño */
-    padding: 8px; /* Menos padding en botones */
-    min-height: 36px; /* Altura mínima reducida */
+    font-size: 12px; /* Texto de botones legible */
+    padding: 16px 8px; /* Más padding vertical para botones más altos */
+    min-height: 68px; /* Altura mínima aumentada para mejor touch */
     gap: 4px; /* Menos espacio entre icono y texto */
   }
 
@@ -206,9 +207,10 @@ p {
   }
 
   .button-wide {
-    font-size: 12px; /* Texto más pequeño */
-    padding: 10px; /* Menos padding */
+    font-size: 14px; /* Texto más grande y legible */
+    padding: 20px 10px; /* Más padding para botón más alto */
     gap: 6px; /* Menos espacio entre icono y texto */
+    min-height: 68px; /* Altura consistente con otros botones */
   }
 
   .button-wide i {
@@ -240,13 +242,13 @@ p {
   }
 
   h1 {
-    font-size: 18px; /* Título más pequeño */
+    font-size: 24px; /* Título más visible para pantallas muy pequeñas */
   }
 
   .button {
-    font-size: 10px; /* Texto muy pequeño en botones */
-    padding: 6px; /* Padding mínimo */
-    min-height: 32px; /* Altura mínima muy pequeña */
+    font-size: 11px; /* Texto legible en pantallas pequeñas */
+    padding: 14px 6px; /* Padding adecuado */
+    min-height: 60px; /* Altura mínima para touch fácil */
   }
 
   .button i {
