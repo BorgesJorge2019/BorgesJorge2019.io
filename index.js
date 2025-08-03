@@ -11,12 +11,13 @@ function agregarContacto() {
   const vCardData = `BEGIN:VCARD
 VERSION:3.0
 FN:Jorge Borges
+N:Borges;Jorge;;;
 ORG:Servicios de Handyman
-TEL:+17875555555
+TEL;TYPE=CELL:+1-787-555-5555
 EMAIL:correo@ejemplo.com
-URL:https://wa.me/7875555555
+URL:https://borgesjorge2019.github.io/BorgesJorge2019.io/
 ADR:;;Caguas;Puerto Rico;;;
-NOTE:Tu solución rápida en casa - Reparaciones, mantenimiento y mejoras con confianza y calidad
+NOTE:Tu solución rápida en casa - Reparaciones mantenimiento y mejoras con confianza y calidad
 END:VCARD`;
 
   // Detectar si es un dispositivo móvil
