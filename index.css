@@ -31,7 +31,7 @@ body {
 .banner {
   width: 100%; /* Ancho completo de la tarjeta */
   max-width: none; /* Sin límite de ancho máximo */
-  height: 180px; /* Alto del banner aumentado para mostrar toda la imagen - ajustar aquí */
+  height: 220px; /* Alto del banner aumentado para mostrar toda la imagen - ajustar aquí */
   object-fit: cover; /* Hace que la imagen cubra el área sin distorsionarse */
   border-radius: 12px; /* Esquinas redondeadas del banner */
   margin: 0; /* Sin márgenes para ocupar todo el ancho */
@@ -168,7 +168,7 @@ p {
   .banner {
     width: 100%; /* Banner ocupa todo el ancho en móvil */
     max-width: none; /* Sin límite de ancho */
-    height: 150px; /* Altura aumentada para móvil - ajustar aquí */
+    height: 180px; /* Altura aumentada para móvil - ajustar aquí */
     /* Los márgenes y centrado se mantienen automáticamente */
   }
 
@@ -233,7 +233,7 @@ p {
   .banner {
     width: 100%; /* Banner ocupa todo el ancho para pantallas tiny */
     max-width: none; /* Sin límite de ancho */
-    height: 130px; /* Altura ajustada para pantallas pequeñas */
+    height: 160px; /* Altura ajustada para pantallas pequeñas */
     /* Los márgenes y centrado se mantienen automáticamente */
   }
 
@@ -268,7 +268,7 @@ p {
   .banner {
     width: 100%; /* Banner ocupa todo el ancho en tablets */
     max-width: none; /* Sin límite de ancho */
-    height: 200px; /* Altura aumentada para tablets */
+    height: 240px; /* Altura aumentada para tablets */
     /* Los márgenes y centrado se mantienen automáticamente */
   }
 
