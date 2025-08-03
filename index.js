@@ -13,7 +13,7 @@ VERSION:3.0
 FN:Jorge Borges
 N:Borges;Jorge;;;
 ORG:Servicios de Handyman
-TEL;TYPE=CELL:+1-787-555-5555
+TEL;TYPE=CELL:787-555-5555
 EMAIL:correo@ejemplo.com
 URL:https://borgesjorge2019.github.io/BorgesJorge2019.io/
 ADR:;;Caguas;Puerto Rico;;;
@@ -24,9 +24,21 @@ END:VCARD`;
   const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   
   if (isMobile) {
-    // Para dispositivos móviles, usar data URI
-    const dataUri = 'data:text/vcard;charset=utf-8,' + encodeURIComponent(vCardData);
-    window.open(dataUri, '_blank');
+    // Para dispositivos móviles, crear un enlace temporal y hacer click
+    const blob = new Blob([vCardData], { type: 'text/vcard;charset=utf-8' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Jorge_Borges_Contacto.vcf';
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+    
+    // Limpiar después de un breve delay
+    setTimeout(() => {
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(url);
+    }, 100);
   } else {
     // Para desktop, usar el método tradicional
     const blob = new Blob([vCardData], { type: 'text/vcard' });
