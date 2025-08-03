@@ -12,7 +12,7 @@ function agregarContacto() {
 VERSION:3.0
 FN:Jorge Borges
 ORG:Servicios de Handyman
-TEL:+7875555555
+TEL:+17875555555
 EMAIL:correo@ejemplo.com
 URL:https://wa.me/7875555555
 ADR:;;Caguas;Puerto Rico;;;
