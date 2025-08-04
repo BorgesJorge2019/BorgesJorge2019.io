@@ -11,9 +11,9 @@ body {
 /* Contenedor principal de la tarjeta digital */
 .card {
   background-color: #333; /* Fondo de la tarjeta dark - Cambiar a #fff para fondo blanco */
-  max-width: 400px; /* Ancho máximo de la tarjeta - ajustar aquí */
+  max-width: 500px; /* Ancho máximo aumentado para escritorio */
   margin: auto; /* Centra la tarjeta horizontalmente */
-  padding: 20px; /* Espacio interno de la tarjeta */
+  padding: 30px; /* Más espacio interno para escritorio */
   border-radius: 12px; /* Esquinas redondeadas - cambiar valor para más/menos redondez */
   box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Sombra de la tarjeta */
 }
@@ -31,7 +31,7 @@ body {
 .banner {
   width: 100%; /* Ancho completo de la tarjeta */
   max-width: none; /* Sin límite de ancho máximo */
-  height: 220px; /* Alto del banner aumentado para mostrar toda la imagen - ajustar aquí */
+  height: 280px; /* Alto del banner aumentado para escritorio */
   object-fit: cover; /* Hace que la imagen cubra el área sin distorsionarse */
   border-radius: 12px; /* Esquinas redondeadas del banner */
   margin: 0; /* Sin márgenes para ocupar todo el ancho */
@@ -41,8 +41,8 @@ body {
 /* Imagen de perfil superpuesta */
 .profile-img {
   position: absolute; /* Se posiciona sobre el banner */
-  width: 100px; /* Tamaño de la imagen del perfil - Cambiar aquí para ajustar */
-  height: 100px; /* Tamaño de la imagen del perfil - Cambiar aquí para ajustar */
+  width: 120px; /* Tamaño aumentado para escritorio */
+  height: 120px; /* Tamaño aumentado para escritorio */
   border-radius: 8px; /* Para imagen cuadrada. Cambiar a 50% para imagen redonda */
   bottom: -80px; /* Posición vertical desde abajo - ajustar para subir/bajar */
   left: 50%; /* Centra horizontalmente */
@@ -55,21 +55,21 @@ body {
 /* Nombre principal */
 h1 {
   margin: 10px 0; /* Espacio arriba y abajo del nombre */
-  font-size: 32px; /* Tamaño del nombre - ajustar aquí */
+  font-size: 36px; /* Tamaño aumentado para escritorio */
   color: white; /* Color del nombre/título - Cambiar a #000 para fondo blanco */
   font-weight: bold; /* Texto en negrita para mayor impacto */
 }
 
 /* Párrafos generales */
 p {
-  font-size: 14px; /* Tamaño del texto general - ajustar aquí */
+  font-size: 16px; /* Tamaño aumentado para escritorio */
   color: #ccc; /* Color del texto general - Cambiar a #555 para fondo blanco */
 }
 
 /* Texto del subtítulo (ubicación) */
 .titulo {
   color: #aaa; /* Color del subtítulo - Cambiar a #888 para fondo blanco */
-  font-size: 14px; /* Tamaño del subtítulo */
+  font-size: 16px; /* Tamaño aumentado para escritorio */
 }
 
 /* Texto "Powered by" al final */
@@ -95,23 +95,23 @@ p {
   background-color: #fa5b0f; /* Color principal de los botones - Cambiar aquí */
   color: white; /* Color del texto en los botones - Cambiar aquí */
   border: none; /* Sin borde */
-  font-size: 14px; /* Tamaño del texto - ajustar aquí */
+  font-size: 16px; /* Tamaño aumentado para escritorio */
   text-decoration: none; /* Sin subrayado para enlaces */
   cursor: pointer; /* Cursor de mano al pasar sobre el botón */
   text-align: center; /* Texto centrado */
-  padding: 12px; /* Espacio interno del botón - ajustar aquí */
+  padding: 16px; /* Más espacio interno para escritorio */
   border-radius: 0; /* Esquinas rectas - cambiar a 8px para esquinas redondeadas */
-  min-height: 48px; /* Altura mínima del botón */
+  min-height: 56px; /* Altura mínima aumentada */
   box-sizing: border-box; /* Incluye padding en el tamaño total */
   display: flex; /* Flexbox para alinear icono y texto */
   align-items: center; /* Centra verticalmente */
   justify-content: center; /* Centra horizontalmente */
-  gap: 6px; /* Espacio entre icono y texto - ajustar aquí */
+  gap: 8px; /* Más espacio entre icono y texto */
 }
 
 /* Tamaño de los iconos dentro de los botones */
 .button i {
-  font-size: 16px; /* Tamaño de los iconos - Cambiar aquí para ajustar */
+  font-size: 18px; /* Tamaño aumentado para escritorio */
 }
 
 /* Efecto al pasar el cursor sobre los botones */
@@ -123,11 +123,11 @@ p {
 .button-wide {
   width: 100%; /* Ocupa todo el ancho disponible */
   margin-top: 15px; /* Espacio arriba del botón */
-  padding: 12px; /* Espacio interno */
+  padding: 16px; /* Más espacio interno para escritorio */
   background-color: white; /* Color de fondo del botón ancho - Cambiar aquí */
   color: #fa5b0f; /* Color del texto del botón ancho - Cambiar aquí */
   border: 2px solid #fa5b0f; /* Color del borde del botón ancho - Cambiar aquí */
-  font-size: 14px; /* Tamaño del texto */
+  font-size: 16px; /* Tamaño aumentado para escritorio */
   cursor: pointer; /* Cursor de mano */
   text-align: center; /* Texto centrado */
   border-radius: 0; /* Esquinas rectas - cambiar para redondear */
@@ -135,12 +135,12 @@ p {
   display: flex; /* Flexbox para alinear contenido */
   align-items: center; /* Centra verticalmente */
   justify-content: center; /* Centra horizontalmente */
-  gap: 8px; /* Espacio entre icono y texto */
+  gap: 10px; /* Más espacio entre icono y texto */
 }
 
 /* Icono del botón ancho */
 .button-wide i {
-  font-size: 16px; /* Tamaño del icono del botón ancho */
+  font-size: 18px; /* Tamaño aumentado para escritorio */
 }
 
 /* Efecto hover del botón ancho */
@@ -152,128 +152,245 @@ p {
 /* Estilos para dispositivos móviles (pantallas menores a 480px) */
 @media (max-width: 480px) {
   body {
-    padding: 10px; /* Menos padding en móvil para aprovechar espacio */
+    padding: 5px; /* Menos padding en móvil para aprovechar más espacio */
   }
 
   .card {
-    max-width: 95%; /* La tarjeta ocupa casi toda la pantalla */
-    margin: 10px auto; /* Menos margen en móvil */
-    padding: 15px; /* Menos padding interno */
+    max-width: 100%; /* La tarjeta ocupa toda la pantalla disponible */
+    margin: 5px auto; /* Mínimo margen en móvil */
+    padding: 16px; /* Padding optimizado para móvil */
   }
 
   .image-container {
-    margin-bottom: 60px; /* Menos espacio en móvil */
+    margin-bottom: 50px; /* Espacio optimizado en móvil */
   }
 
   .banner {
     width: 100%; /* Banner ocupa todo el ancho en móvil */
     max-width: none; /* Sin límite de ancho */
-    height: 180px; /* Altura aumentada para móvil - ajustar aquí */
+    height: 160px; /* Altura optimizada para móvil */
     /* Los márgenes y centrado se mantienen automáticamente */
   }
 
   .profile-img {
-    width: 80px; /* Imagen de perfil más pequeña en móvil - ajustar aquí */
-    height: 80px; /* Altura reducida - ajustar aquí */
-    bottom: -60px; /* Ajustar posición para el nuevo tamaño */
+    width: 70px; /* Imagen de perfil optimizada para móvil */
+    height: 70px; /* Altura optimizada */
+    bottom: -50px; /* Posición ajustada para el nuevo tamaño */
   }
 
   h1 {
-    font-size: 28px; /* Título más grande en móvil para mejor visibilidad */
-    margin: 8px 0; /* Menos margen */
+    font-size: 24px; /* Título legible en móvil */
+    margin: 8px 0; /* Margen optimizado */
   }
 
   p {
-    font-size: 13px; /* Texto más pequeño para móvil */
+    font-size: 14px; /* Texto legible para móvil */
+    line-height: 1.4; /* Mejor espaciado de líneas */
   }
 
   .titulo {
-    font-size: 13px; /* Subtítulo más pequeño */
+    font-size: 14px; /* Subtítulo legible */
   }
 
   .button {
-    font-size: 12px; /* Texto de botones legible */
-    padding: 16px 8px; /* Más padding vertical para botones más altos */
-    min-height: 68px; /* Altura mínima aumentada para mejor touch */
-    gap: 4px; /* Menos espacio entre icono y texto */
+    font-size: 13px; /* Texto de botones legible */
+    padding: 14px 8px; /* Padding optimizado para touch */
+    min-height: 60px; /* Altura mínima para fácil touch */
+    gap: 4px; /* Espacio optimizado entre icono y texto */
   }
 
   .button i {
-    font-size: 14px; /* Iconos más pequeños en móvil */
+    font-size: 14px; /* Iconos apropiados para móvil */
   }
 
   .button-grid {
     grid-template-columns: repeat(2, 1fr); /* Solo 2 columnas en móvil */
-    gap: 8px; /* Menos espacio entre botones */
+    gap: 8px; /* Espacio optimizado entre botones */
   }
 
   .button-wide {
-    font-size: 14px; /* Texto más grande y legible */
-    padding: 20px 10px; /* Más padding para botón más alto */
-    gap: 6px; /* Menos espacio entre icono y texto */
-    min-height: 68px; /* Altura consistente con otros botones */
+    font-size: 14px; /* Texto legible */
+    padding: 18px 12px; /* Padding optimizado para touch */
+    gap: 6px; /* Espacio optimizado entre icono y texto */
+    min-height: 60px; /* Altura consistente con otros botones */
   }
 
   .button-wide i {
-    font-size: 14px; /* Icono más pequeño */
+    font-size: 14px; /* Icono apropiado */
   }
 
   .powered-by {
-    font-size: 10px; /* Texto "powered by" más pequeño */
-    margin-top: 15px; /* Menos margen superior */
+    font-size: 10px; /* Texto pequeño y discreto */
+    margin-top: 15px; /* Margen optimizado */
   }
 }
 
 /* Estilos para pantallas muy pequeñas (menores a 320px) */
 @media (max-width: 320px) {
   .card {
-    padding: 12px; /* Padding aún más reducido */
+    padding: 12px; /* Padding reducido para pantallas muy pequeñas */
+    margin: 2px auto; /* Margen mínimo */
   }
 
   .banner {
     width: 100%; /* Banner ocupa todo el ancho para pantallas tiny */
     max-width: none; /* Sin límite de ancho */
-    height: 160px; /* Altura ajustada para pantallas pequeñas */
+    height: 140px; /* Altura optimizada para pantallas muy pequeñas */
     /* Los márgenes y centrado se mantienen automáticamente */
   }
 
   .profile-img {
-    width: 70px; /* Imagen de perfil muy pequeña */
-    height: 70px;
-    bottom: -50px;
+    width: 60px; /* Imagen de perfil muy pequeña */
+    height: 60px;
+    bottom: -40px;
   }
 
   h1 {
-    font-size: 24px; /* Título más visible para pantallas muy pequeñas */
+    font-size: 20px; /* Título apropiado para pantallas muy pequeñas */
+  }
+
+  p {
+    font-size: 12px; /* Texto más pequeño pero legible */
+    line-height: 1.3;
+  }
+
+  .titulo {
+    font-size: 12px;
   }
 
   .button {
     font-size: 11px; /* Texto legible en pantallas pequeñas */
-    padding: 14px 6px; /* Padding adecuado */
-    min-height: 60px; /* Altura mínima para touch fácil */
+    padding: 12px 4px; /* Padding reducido */
+    min-height: 56px; /* Altura mínima para touch fácil */
   }
 
   .button i {
-    font-size: 12px; /* Iconos muy pequeños */
+    font-size: 12px; /* Iconos apropiados */
+  }
+
+  .button-wide {
+    font-size: 12px;
+    padding: 16px 8px;
+    min-height: 56px;
+  }
+
+  .button-wide i {
+    font-size: 12px;
   }
 }
 
 /* Estilos para tablets (entre 481px y 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
   .card {
-    max-width: 450px; /* Tarjeta más ancha en tablets */
-    padding: 25px; /* Más padding por el espacio extra */
+    max-width: 480px; /* Tarjeta más ancha en tablets */
+    padding: 28px; /* Más padding por el espacio extra */
   }
 
   .banner {
     width: 100%; /* Banner ocupa todo el ancho en tablets */
     max-width: none; /* Sin límite de ancho */
-    height: 240px; /* Altura aumentada para tablets */
+    height: 260px; /* Altura aumentada para tablets */
     /* Los márgenes y centrado se mantienen automáticamente */
+  }
+
+  .profile-img {
+    width: 110px; /* Tamaño intermedio para tablets */
+    height: 110px;
+  }
+
+  h1 {
+    font-size: 32px; /* Tamaño intermedio para tablets */
+  }
+
+  p {
+    font-size: 15px; /* Tamaño intermedio */
+  }
+
+  .titulo {
+    font-size: 15px;
+  }
+
+  .button {
+    font-size: 15px; /* Tamaño intermedio */
+    padding: 15px;
+    min-height: 52px;
+  }
+
+  .button i {
+    font-size: 17px;
+  }
+
+  .button-wide {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .button-wide i {
+    font-size: 17px;
   }
 
   .button-grid {
     grid-template-columns: repeat(3, 1fr); /* Mantener 3 columnas en tablets */
     gap: 12px; /* Más espacio entre botones */
+  }
+}
+
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 769px) {
+  .card {
+    max-width: 550px; /* Ancho máximo para pantallas grandes */
+    padding: 35px; /* Más padding para escritorio */
+  }
+
+  .banner {
+    height: 300px; /* Altura máxima para escritorio */
+  }
+
+  .profile-img {
+    width: 130px; /* Tamaño máximo para escritorio */
+    height: 130px;
+    bottom: -85px;
+  }
+
+  .image-container {
+    margin-bottom: 90px; /* Más espacio en escritorio */
+  }
+
+  h1 {
+    font-size: 40px; /* Tamaño máximo para escritorio */
+  }
+
+  p {
+    font-size: 18px; /* Texto más grande para escritorio */
+    line-height: 1.5;
+  }
+
+  .titulo {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 17px; /* Texto más grande */
+    padding: 18px;
+    min-height: 60px;
+    gap: 10px;
+  }
+
+  .button i {
+    font-size: 20px; /* Iconos más grandes */
+  }
+
+  .button-wide {
+    font-size: 17px;
+    padding: 18px;
+    gap: 12px;
+  }
+
+  .button-wide i {
+    font-size: 20px;
+  }
+
+  .button-grid {
+    gap: 15px; /* Más espacio entre botones en escritorio */
   }
 }
