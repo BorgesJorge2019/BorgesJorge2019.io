@@ -1,4 +1,23 @@
 /* === FUNCIONES JAVASCRIPT === */
+/* Función para compartir el enlace en móviles */
+function compartirEnlace() {
+  const url = window.location.href;
+  const title = document.title || "Business Card";
+  const text = "¡Mira mi tarjeta de contacto!";
+  if (navigator.share) {
+    navigator.share({
+      title: title,
+      text: text,
+      url: url
+    }).catch(() => {
+      alert("No se pudo compartir el enlace.");
+    });
+  } else {
+    // Fallback para desktop o navegadores sin soporte
+    navigator.clipboard.writeText(url);
+    alert("Enlace copiado al portapapeles: " + url);
+  }
+}
 
 /* Función que muestra la lista de servicios disponibles */
 /* PARA EDITAR: Cambiar el texto dentro de alert() por tus servicios */
